@@ -7,5 +7,5 @@
     "url": "https://archielite.com",
     "version": "1.0.0",
     "description": "Notification for ecommerce.",
-    "require": ["botble/ecommerce", "archielite/notification-plus"]
+    "require": ["ecommerce", "archielite/notification-plus"]
 }
