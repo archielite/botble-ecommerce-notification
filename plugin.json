@@ -1,0 +1,11 @@
+{
+    "id": "archielite/ecommerce-notification",
+    "name": "Ecommerce Notification",
+    "namespace": "ArchiElite\\EcommerceNotification\\",
+    "provider": "ArchiElite\\EcommerceNotification\\Providers\\EcommerceNotificationServiceProvider",
+    "author": "Archi Elite",
+    "url": "https://archielite.com",
+    "version": "1.0.0",
+    "description": "Notification for ecommerce",
+    "require": ["botble/ecommerce", "archielite/notification-plus"]
+}
