@@ -24,7 +24,7 @@ class SendShippingStatusChangedNotification implements ShouldQueue
                     'order_id' => get_order_code($order->id),
                     'order_url' => route('orders.edit', $shipment->order_id),
                     'order' => $order,
-                    'order_status' => $shipment->status->label(),
+                    'order_status' => $order->status->label(),
                     'customer' => $order->address,
                     'shipment' => $shipment,
                 ]

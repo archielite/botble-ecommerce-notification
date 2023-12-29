@@ -5,7 +5,7 @@
     "provider": "ArchiElite\\EcommerceNotification\\Providers\\EcommerceNotificationServiceProvider",
     "author": "Archi Elite",
     "url": "https://archielite.com",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Notification for ecommerce.",
     "require": ["ecommerce", "notification-plus"]
 }

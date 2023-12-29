@@ -17,10 +17,10 @@ class SendOrderReturnedNotification implements ShouldQueue
 
         EcommerceNotification::make()
             ->sendNotifyToDriversUsing('order', 'Your order {{ order_id }} has been returned on {{ site_name }}.', [
-                'order_id' => get_order_code($order->id),
-                'order_url' => route('orders.edit', $order->id),
+                'order_id' => $order->code,
+                'order_url' => route('orders.edit', $order->getKey()),
                 'order' => $order,
-                'status' => $order->status->label(),
+                'status' => $order->return_status->label(),
                 'customer' => $order->address,
             ]);
     }
