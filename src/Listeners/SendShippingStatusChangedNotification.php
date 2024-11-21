@@ -22,7 +22,7 @@ class SendShippingStatusChangedNotification implements ShouldQueue
                 'The shipping status of your order {{ order_id }} has been changed to {{ order_status }} on {{ site_name }}.',
                 [
                     'order_id' => get_order_code($order->id),
-                    'order_url' => route('orders.edit', $shipment->order_id),
+                    'order_url' => route('customer.orders.view', $shipment->order_id),
                     'order' => $order,
                     'order_status' => $order->status->label(),
                     'customer' => $order->address,

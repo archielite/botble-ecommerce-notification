@@ -18,7 +18,7 @@ class SendOrderCompletedNotification implements ShouldQueue
         EcommerceNotification::make()
             ->sendNotifyToDriversUsing('order', 'Order {{ order_id }} has been completed on {{ site_name }}.', [
                 'order_id' => get_order_code($order->id),
-                'order_url' => route('orders.edit', $order->id),
+                'order_url' => route('customer.orders.view', $order->getKey()),
                 'order' => $order,
                 'status' => $order->status->label(),
                 'customer' => $order->address,
