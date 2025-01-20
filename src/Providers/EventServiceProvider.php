@@ -2,7 +2,6 @@
 
 namespace ArchiElite\EcommerceNotification\Providers;
 
-use App\Providers\EventServiceProvider as ServiceProvider;
 use ArchiElite\EcommerceNotification\Listeners\SendOrderCancelledNotification;
 use ArchiElite\EcommerceNotification\Listeners\SendOrderCompletedNotification;
 use ArchiElite\EcommerceNotification\Listeners\SendOrderConfirmedNotification;
@@ -19,6 +18,7 @@ use Botble\Ecommerce\Events\OrderPlacedEvent;
 use Botble\Ecommerce\Events\OrderReturnedEvent;
 use Botble\Ecommerce\Events\ShippingStatusChanged;
 use Botble\Ecommerce\Listeners\OrderCreatedNotification;
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {
